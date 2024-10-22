@@ -34,9 +34,9 @@ def weather(key):
         if str(e)=='\'current\'':
             messagebox.showinfo(title='Location Error',message='The Entered Location Was Not Found!')
         else:
-            messagebox.showinfo(title='Location Error',message='Cannot Connect to the Internet!\nTry Again!')
+            messagebox.showinfo(title='Internet Error',message='Cannot Connect to the Internet!\nTry Again!')
 
-key='30b969c9133b49b9992183354230302' # Enter your API key here
+key='' # Enter your API key here
 loac=Entry(textvariable=locati,width=33,font="Comicsansms 15 bold").place_configure(height=28,x=155,y=50)
 tk.geometry("600x600")
 tk.config(background="black")
